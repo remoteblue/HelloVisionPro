@@ -15,8 +15,11 @@ One of the process is proposed by https://github.com/Sigil-Wen/Dream-with-Vision
 a, user gives a word. The word triggers the [shape-E](https://github.com/openai/shap-e) , which is a text-conditioned model. This produces a .obj file - a standard 3D model format
 b, scale: the app utilizes "Spellbook" and GPT-4 promping engineering to estimate the objs' hight and dimension. 
 c. using [3D Viewer](https://3dviewer.net/#model=https://raw.githubusercontent.com/IFCjs/test-ifc-files/main/Others/haus.ifc) to convert .obj file into 3D model which the user could interact with.
+
 ## A route of NeRF
 
+## A route of Gaussian Splatter
+The article [MetalSplatter for VisionPro](https://radiancefields.com/metalsplatter-for-apple-vision-pro/) documents an app available for VisionPro. It is worth noting that essentially 3DGS is a rasterization. If thinking about it carefully, looking at VisionPro is to look at two LED display with lots of pixle on it. 
 
 # Research
 1. The basic of VisionOS https://developer.apple.com/documentation/visionos 
@@ -26,6 +29,7 @@ c. using [3D Viewer](https://3dviewer.net/#model=https://raw.githubusercontent.c
 4. Unity resource for the game app. This comes from Apple Full space app example "Happy BEAM" https://developer.apple.com/documentation/visionos/happybeam 
 ![alt text](image.png)
 5. Nvidia Marco Pavone's team demonstrates that [EmerNeRF](https://github.com/NVlabs/EmerNeRF?tab=readme-ov-file#introduction) could levarge the single trip data of the multi sensor to reconstruct the 4-D driving scenece (3D space + temporal). The model achieves state-of-the art performance in sensor simulation according to the [paper](https://arxiv.org/pdf/2311.02077.pdf). PreTrain model may be available for the qualified users. 
+6. [Gaussion Splashing](https://amysteriouscat.github.io/GaussianSplashing/) becomes popular for knonwn fidelity and editable in the real time. Paper [Gaussian Splashing: Dynamic Fluid Sythesis with Gaussian Splatting](https://arxiv.org/pdf/2401.15318.pdf)
 
 
 # Vendors: I found interesting vendors as the following:
